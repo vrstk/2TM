@@ -45,6 +45,10 @@
   display: block;
 }
 
+._icon-calendar:before {
+  content: "\e911";
+}
+
 ._icon-facebook:before {
   content: "\e90c";
 }
@@ -1137,18 +1141,18 @@ p {
 }
 
 .timetable__text {
-  line-height: 1.2272727273;
+  line-height: 1.125;
 }
 
-@supports (font-size: clamp( 1rem , 0.8823529412rem  +  0.5882352941vw , 1.375rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .timetable__text {
-    font-size: clamp( 1rem , 0.8823529412rem  +  0.5882352941vw , 1.375rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (font-size: clamp( 1rem , 0.8823529412rem  +  0.5882352941vw , 1.375rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .timetable__text {
-    font-size: calc(1rem + 0.375 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1180,15 +1184,15 @@ p {
   padding: 0rem 0rem 0rem 1.875rem;
 }
 
-@supports (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-fair__item {
-    margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-fair__item {
-    margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1373,15 +1377,15 @@ p {
   line-height: 1.2083333333;
 }
 
-@supports (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-representatives__faculty {
-    margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-representatives__faculty {
-    margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1389,15 +1393,15 @@ p {
   line-height: 1.2083333333;
 }
 
-@supports (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-representatives__name {
-    margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-representatives__name {
-    margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1406,15 +1410,15 @@ p {
   margin: 0rem 0rem 0.625rem 0rem;
 }
 
-@supports (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-representatives__function {
-    margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .list-representatives__function {
-    margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1635,15 +1639,15 @@ p {
           transform: translate(0rem, -0.125rem);
 }
 
-@supports (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .item-target__title {
-    margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .item-target__title {
-    margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1652,15 +1656,15 @@ p {
   padding: 0rem 1.25rem;
 }
 
-@supports (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .item-target__text {
-    margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
+    font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
+@supports not (font-size: clamp( 1rem , 0.8431372549rem  +  0.7843137255vw , 1.5rem )) {
   .item-target__text {
-    margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
+    font-size: calc(1rem + 0.5 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1845,19 +1849,19 @@ p {
 .table-shedule__cell:nth-child(2) {
   width: 25%;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.2083333333;
   padding-right: 0.625rem;
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7573529412rem  +  0.5882352941vw , 1.25rem )) {
+@supports (font-size: clamp( 0.875rem , 0.6789215686rem  +  0.9803921569vw , 1.5rem )) {
   .table-shedule__cell:nth-child(2) {
-    font-size: clamp( 0.875rem , 0.7573529412rem  +  0.5882352941vw , 1.25rem );
+    font-size: clamp( 0.875rem , 0.6789215686rem  +  0.9803921569vw , 1.5rem );
   }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7573529412rem  +  0.5882352941vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.6789215686rem  +  0.9803921569vw , 1.5rem )) {
   .table-shedule__cell:nth-child(2) {
-    font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 63.75);
+    font-size: calc(0.875rem + 0.625 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -1875,38 +1879,38 @@ p {
 
 .table-shedule__cell:nth-child(3) {
   width: 25%;
-  line-height: 1.25;
+  line-height: 1.2083333333;
   padding: 0rem 0.625rem;
 }
 
-@supports (font-size: clamp( 0.875rem , 0.8357843137rem  +  0.1960784314vw , 1rem )) {
+@supports (font-size: clamp( 0.875rem , 0.6789215686rem  +  0.9803921569vw , 1.5rem )) {
   .table-shedule__cell:nth-child(3) {
-    font-size: clamp( 0.875rem , 0.8357843137rem  +  0.1960784314vw , 1rem );
+    font-size: clamp( 0.875rem , 0.6789215686rem  +  0.9803921569vw , 1.5rem );
   }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.8357843137rem  +  0.1960784314vw , 1rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.6789215686rem  +  0.9803921569vw , 1.5rem )) {
   .table-shedule__cell:nth-child(3) {
-    font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 63.75);
+    font-size: calc(0.875rem + 0.625 * (100vw - 20rem) / 63.75);
   }
 }
 
 .table-shedule__cell:nth-child(4) {
   width: 35%;
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.2083333333;
   padding: 0rem 0.625rem;
 }
 
-@supports (font-size: clamp( 0.625rem , 0.5073529412rem  +  0.5882352941vw , 1rem )) {
+@supports (font-size: clamp( 0.625rem , 0.3504901961rem  +  1.3725490196vw , 1.5rem )) {
   .table-shedule__cell:nth-child(4) {
-    font-size: clamp( 0.625rem , 0.5073529412rem  +  0.5882352941vw , 1rem );
+    font-size: clamp( 0.625rem , 0.3504901961rem  +  1.3725490196vw , 1.5rem );
   }
 }
 
-@supports not (font-size: clamp( 0.625rem , 0.5073529412rem  +  0.5882352941vw , 1rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.3504901961rem  +  1.3725490196vw , 1.5rem )) {
   .table-shedule__cell:nth-child(4) {
-    font-size: calc(0.625rem + 0.375 * (100vw - 20rem) / 63.75);
+    font-size: calc(0.625rem + 0.875 * (100vw - 20rem) / 63.75);
   }
 }
 
@@ -2394,6 +2398,23 @@ p {
 }
 
 .contacts__adress::before {
+  font-size: 3.125rem;
+  color: #13B23A;
+  margin: 0rem 1.25rem 0rem 0rem;
+}
+
+.contacts__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125rem;
+  line-height: 3.0555555556;
+}
+
+.contacts__date::before {
   font-size: 3.125rem;
   color: #13B23A;
   margin: 0rem 1.25rem 0rem 0rem;
