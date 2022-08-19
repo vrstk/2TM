@@ -1219,7 +1219,21 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 4.0625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@supports (gap: clamp( 0.625rem , -0.4534313725rem  +  5.3921568627vw , 4.0625rem )) {
+  .reminder__container {
+    gap: clamp( 0.625rem , -0.4534313725rem  +  5.3921568627vw , 4.0625rem );
+  }
+}
+
+@supports not (gap: clamp( 0.625rem , -0.4534313725rem  +  5.3921568627vw , 4.0625rem )) {
+  .reminder__container {
+    gap: calc(0.625rem + 3.4375 * (100vw - 20rem) / 63.75);
+  }
 }
 
 .reminder__text {
@@ -1234,8 +1248,13 @@ p {
 }
 
 .reminder__button {
+  width: 100%;
   max-width: 26.75rem;
+  max-height: 3.625rem;
   border-radius: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4162,6 +4181,13 @@ p {
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
             column-gap: 0;
+  }
+
+  .reminder__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .for__wrapper {
