@@ -5350,7 +5350,7 @@
             intl_tel_input(inputTel, {
                 autoHideDialCode: false,
                 autoPlaceholder: "aggressive",
-                initialCountry: "ru",
+                initialCountry: "rs",
                 separateDialCode: false,
                 preferredCountries: [ "ru", "ua", "by", "kz", "uz", "kg", "si" ],
                 customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
