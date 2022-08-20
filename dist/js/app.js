@@ -1267,7 +1267,10 @@
                     on: {
                         beforeOpen: function() {},
                         afterOpen: function() {},
-                        beforeClose: function() {},
+                        beforeClose: function() {
+                            const privacyCloseButton = document.querySelector(".popup-privacy.popup_show .popup__close");
+                            if (privacyCloseButton) bodyUnlock();
+                        },
                         afterClose: function() {}
                     }
                 };
@@ -1413,7 +1416,7 @@
                             }
                         }));
                         this.popupLogging(`Открыл попап`);
-                    } else this.popupLogging(`Ой ой, такого попапа нет.Проверьте корректность ввода. `);
+                    } else this.popupLogging(`Ой ой, такого попапа нет. Проверьте корректность ввода. `);
                 }
             }
             close(selectorValue) {
@@ -5367,9 +5370,9 @@
         }
         const btnUp = document.querySelector(".footer__button-up");
         document.addEventListener("windowScroll", (function() {
-            if (pageYOffset >= 1040) btnUp.classList.add("_active"); else if (pageYOffset <= 1040) btnUp.classList.remove("_active");
+            if (scrollY >= 1040) btnUp.classList.add("_active"); else if (scrollY <= 1040) btnUp.classList.remove("_active");
         }));
-        window["FLS"] = true;
+        window["FLS"] = false;
         isWebp();
         fullVHfix();
         formFieldsInit({

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220819224554">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220821000755">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -441,7 +441,7 @@
 								<a href="tel:+38669728141" class="content-way__phone">Тел.: <span>+386 69 728 141</span></a>
 								<div class="content-way__socials socials-way">
 									<a href="" class="socials-way__link _icon-whatsapp"></a>
-									<a href="" class="socials-way__link _icon-viber"></a>
+									<a href="viber://chat?number=%2B38669699054" class="socials-way__link _icon-viber"></a>
 									<a href="" class="socials-way__link _icon-telegram"></a>
 								</div>
 							</div>
@@ -449,17 +449,17 @@
 						<div class="way__form form-way">
 							<p class="form-way__title">Postavite vprašanje</p>
 							<form action="#" method="post" class="form-way form">
-								<input autocomplete="off" type="text" name="form[]" data-error="Napaka" placeholder="Ime*" class="input" data-required>
-								<input autocomplete="off" type="email" name="form[]" data-error="Napaka" placeholder="E-mail*" class="input email" data-required>
+								<div class="form__input"><input autocomplete="off" type="text" name="form[]" data-error="Zahtevano polje" placeholder="Ime*" class="input" data-required data-validate></div>
+								<div class="form__input"><input autocomplete="off" type="email" name="form[]" data-error="Zahtevano polje" placeholder="E-mail*" class="input email" data-required data-validate></div>
 								<input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel">
 								<textarea autocomplete="off" type="text" name="form[]" rows="1" placeholder="Postavite vprašanje" class="input textarea"></textarea>
 								<div class="checkbox">
-									<input id="c_1" data-error="Napaka" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required>
+									<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
 									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z obdelavo mojih
 											osebnih podatkov</span></label>
 								</div>
 								<div class="checkbox">
-									<input id="c_2" data-error="Napaka" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required>
+									<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
 									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
 											let</span></label>
 								</div>
@@ -469,6 +469,7 @@
 						</div>
 					</div>
 				</div>
+				<div id="mapg"></div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -486,17 +487,16 @@
 			<div class="popup__content">
 
 				<div class="way__wrapper">
-					<button data-close type="button" class="popup__close"><span></span></button>
 					<div class="way__content content-way">
 						<h2 class="content-way__title _icon-comp">Povežite se z nami</h2>
 						<p class="content-way__text">Postavite svoje vprašanje. <br>Naši svetovalci vam bodo odgovorili v
 							najkrajšem
 							možnem času.</p>
-						<div class="content-way__contacts">
+						<div data-da=".form-way,767,last" class="content-way__contacts">
 							<a href="tel:+38669728141" class="content-way__phone">Тел.: <span>+386 69 728 141</span></a>
 							<div class="content-way__socials socials-way">
 								<a href="" class="socials-way__link _icon-whatsapp"></a>
-								<a href="" class="socials-way__link _icon-viber"></a>
+								<a href="viber://chat?number=%2B38669699054" class="socials-way__link _icon-viber"></a>
 								<a href="" class="socials-way__link _icon-telegram"></a>
 							</div>
 						</div>
@@ -504,17 +504,17 @@
 					<div class="way__form form-way">
 						<p class="form-way__title">Postavite vprašanje</p>
 						<form action="#" method="post" class="form-way form">
-							<input autocomplete="off" type="text" name="form[]" data-error="Napaka" placeholder="Ime*" class="input" data-required>
-							<input autocomplete="off" type="email" name="form[]" data-error="Napaka" placeholder="E-mail*" class="input email" data-required>
+							<div class="form__input"><input autocomplete="off" type="text" name="form[]" data-error="Zahtevano polje" placeholder="Ime*" class="input" data-required data-validate></div>
+							<div class="form__input"><input autocomplete="off" type="email" name="form[]" data-error="Zahtevano polje" placeholder="E-mail*" class="input email" data-required data-validate></div>
 							<input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel">
 							<textarea autocomplete="off" type="text" name="form[]" rows="1" placeholder="Postavite vprašanje" class="input textarea"></textarea>
 							<div class="checkbox">
-								<input id="c_1" data-error="Napaka" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required>
+								<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
 								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z obdelavo mojih
 										osebnih podatkov</span></label>
 							</div>
 							<div class="checkbox">
-								<input id="c_2" data-error="Napaka" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required>
+								<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
 								<label for="c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
 										let</span></label>
 							</div>
@@ -523,6 +523,7 @@
 						</form>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -612,7 +613,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220819224554"></script>
+	<script src="js/app.min.js?_v=20220821000755"></script>
 </body>
 
 </html>
