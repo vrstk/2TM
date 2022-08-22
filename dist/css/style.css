@@ -1283,7 +1283,6 @@ p {
 .reminder__button {
   width: 100%;
   max-width: 26.75rem;
-  max-height: 3.625rem;
   border-radius: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
