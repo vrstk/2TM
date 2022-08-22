@@ -5136,43 +5136,6 @@
                 },
                 on: {}
             });
-            if (document.querySelector(".target__slider")) new core(".target__slider", {
-                modules: [ Navigation, Pagination ],
-                observer: true,
-                observeParents: true,
-                slidesPerView: 1,
-                spaceBetween: 0,
-                autoHeight: true,
-                speed: 800,
-                pagination: {
-                    el: ".target__pagination",
-                    clickable: true
-                },
-                navigation: {
-                    prevEl: ".target__button-prev",
-                    nextEl: ".target__button-next"
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                        autoHeight: true
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    992: {
-                        slidesPerView: 3,
-                        spaceBetween: 30
-                    },
-                    1268: {
-                        slidesPerView: 3,
-                        spaceBetween: 40
-                    }
-                },
-                on: {}
-            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
