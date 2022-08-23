@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220823042003">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220823090638">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,7 +78,7 @@
 					<div class="reminder__text">
 						<span>Želite prejeti opomnik za obisk sejma?</span><br>Pustite nam svoje podatke
 					</div>
-					<button class="reminder__button button">Pošljite</button>
+					<button class="reminder__button button" data-popup=".popup-sejem">Pošljite</button>
 				</div>
 			</section>
 			<section class="page__fair fair">
@@ -372,7 +372,7 @@
 					<div class="reminder__text">
 						<span>Želite prejeti opomnik za obisk sejma?</span><br>Pustite nam svoje podatke
 					</div>
-					<button class="reminder__button button">Pošljite</button>
+					<button class="reminder__button button" data-popup=".popup-sejem">Pošljite</button>
 				</div>
 			</section>
 			<section id="organizer" class="page__organizer organizer">
@@ -454,7 +454,8 @@
 							<p class="form-way__title">Postavite vprašanje</p>
 							<form action="#" method="post" class="form-way form">
 								<div class="form__input"><input autocomplete="off" type="text" name="form[]" data-error="Zahtevano polje" placeholder="Ime*" class="input" data-required data-validate></div>
-								<div class="form__input"><input autocomplete="off" type="email" name="form[]" data-error="Zahtevano polje" placeholder="E-mail*" class="input email" data-required data-validate></div>
+								<div class="form__input"><input autocomplete="off" type="email" name="form[]" data-error="Zahtevano polje" placeholder="E-mail*" class="input email" data-required data-validate>
+								</div>
 								<input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel">
 								<textarea autocomplete="off" type="text" name="form[]" rows="1" placeholder="Postavite vprašanje" class="input textarea"></textarea>
 								<div class="checkbox">
@@ -508,19 +509,19 @@
 					</div>
 					<div class="way__form form-way">
 						<p class="form-way__title">Postavite vprašanje</p>
-						<form action="#" method="post" class="form-way form">
+						<form action="#" method="post" data-ajax class="form-way form">
 							<div class="form__input"><input autocomplete="off" type="text" name="form[]" data-error="Zahtevano polje" placeholder="Ime*" class="input" data-required data-validate></div>
 							<div class="form__input"><input autocomplete="off" type="email" name="form[]" data-error="Zahtevano polje" placeholder="E-mail*" class="input email" data-required data-validate></div>
-							<input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel">
+							<div class="form__input"><input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel"></div>
 							<textarea autocomplete="off" type="text" name="form[]" rows="1" placeholder="Postavite vprašanje" class="input textarea"></textarea>
 							<div class="checkbox">
-								<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
-								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z obdelavo mojih
+								<input id="popup-form__c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
+								<label for="popup-form__c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z obdelavo mojih
 										osebnih podatkov</span></label>
 							</div>
 							<div class="checkbox">
-								<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
-								<label for="c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
+								<input id="popup-form__c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
+								<label for="popup-form__c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
 										let</span></label>
 							</div>
 							<button data-popup=".popup-privacy" class="form__privacy">Politika zaščite osebnih podatkov.</button>
@@ -619,17 +620,68 @@
 		</div>
 	</div>
 
-	<div id="popup" aria-hidden="true" class="popup popup-privacy">
+	<div id="popup" aria-hidden="true" class="popup popup-sejem">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"><span></span></button>
 				<div class="popup__text">
-
+					<form action="#" method="post" data-ajax class="form">
+						<div class="form__row">
+							<div class="form__input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Zahtevano polje" placeholder="Ime*" class="input" data-required data-validate>
+							</div>
+							<div class="form__input">
+								<input autocomplete="off" type="email" name="form[]" data-error="Zahtevano polje" placeholder="E-mail*" class="input email" data-required data-validate>
+							</div>
+							<div class="form__input">
+								<input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel">
+							</div>
+						</div>
+						<div class="form__select">
+							<select name="form[]" class="select" data-error="Izberite sejem" data-required data-validate>
+								<option value="" selected>Izberite sejem</option>
+								<option value="1">Banja Luka, BiH 30.09. - 01.10.22 </option>
+								<option value="2">Sarajevo, BiH 14.10. - 15.10.22 </option>
+								<option value="3">Skopje, Makedonija 18.11. - 19.11.22 </option>
+							</select>
+						</div>
+						<div class="form__row">
+							<div class="form__check">
+								<div class="checkbox">
+									<input id="popup-sejem__c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
+									<label for="popup-sejem__c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z obdelavo mojih
+											osebnih podatkov</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="popup-sejem__c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
+									<label for="popup-sejem__c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
+											let</span></label>
+								</div>
+								<button data-popup=".popup-privacy" class="form__privacy">Politika zaščite osebnih podatkov.</button>
+							</div>
+							<div class="form__btn">
+								<button type="submit" class="button">Pošljite</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220823042003"></script>
+
+	<div id="popup" aria-hidden="true" class="popup popup-thanks">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<span class="popup-thanks__icon _icon-check"></span>
+					<h2 class="popup-thanks__title title">Hvala!</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis consequuntur, enim saepe numquam, labore debitis assumenda reiciendis incidunt illo necessitatibus quas tenetur beatae cum doloremque impedit harum delectus ut veritatis possimus temporibus consectetur tempora. Libero esse sed repudiandae nam nulla veritatis officia error quibusdam exercitationem? Doloremque quas inventore suscipit vero.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220823090638"></script>
 </body>
 
 </html>
