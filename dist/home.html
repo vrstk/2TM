@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220823015711">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220823042003">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,13 @@
 				<div class="header__content">
 					<a href="/" class="header__logo logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo" class="logo__image"></picture></a>
 					<button data-popup=".popup-form" class="header__button _icon-paper-plane">Kontaktirajte nas</button>
-					<a href="mailto:education@2tm.si" class="header__mail _icon-mail">education@2tm.si</a>
-					<a href="viber://chat?number=%2B38669699054" class="header__viber _icon-viber">+386 69 699 054</a>
+					<a href="mailto:education@2tm.si" class="header__mail _icon-mail" data-da=".menu__body, 767, last">education@2tm.si</a>
+					<a href="viber://chat?number=%2B38669699054" class="header__viber _icon-viber" data-da=".menu__body, 767, last">+386 69 699 054</a>
 				</div>
 			</div>
 			<div class="header__menu menu">
 				<div class="menu__container">
-					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item"><a href="" data-goto="#header" data-goto-speed="1000" class="menu__link">O dogodku</a>
@@ -491,6 +491,7 @@
 			<div class="popup__content">
 
 				<div class="way__wrapper">
+					<button data-close type="button" class="popup__close"><span></span></button>
 					<div class="way__content content-way">
 						<h2 class="content-way__title _icon-comp">Povežite se z nami</h2>
 						<p class="content-way__text">Postavite svoje vprašanje. <br>Naši svetovalci vam bodo odgovorili v
@@ -628,7 +629,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220823015711"></script>
+	<script src="js/app.min.js?_v=20220823042003"></script>
 </body>
 
 </html>
