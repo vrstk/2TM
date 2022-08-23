@@ -617,6 +617,7 @@ body::after {
   position: absolute;
   top: 0.9375rem;
   right: 0.625rem;
+  outline: none;
 }
 
 .popup .popup__close::before,
@@ -628,6 +629,7 @@ body::after {
   width: 1.25rem;
   height: 0.0625rem;
   background-color: #000;
+  outline: none;
 }
 
 .popup .popup__close::before {
@@ -678,8 +680,22 @@ body::after {
   padding: 1.25rem 0rem 0rem 0rem;
 }
 
-.popup-thanks {
+.popup-thanks .popup__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.popup-thanks .popup__text {
   text-align: center;
+  margin: 0rem 0rem 1.25rem 0rem;
 }
 
 .popup-thanks__icon {
@@ -699,6 +715,13 @@ body::after {
   border: 0.3125rem solid #13B23A;
   border-radius: 100%;
   margin: 0rem 0rem 1.25rem 0rem;
+}
+
+.popup-thanks-close {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: inline-block;
+  max-width: 10rem;
 }
 
 [class*=-ibg] {
