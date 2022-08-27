@@ -19,6 +19,31 @@
 				<ol class="rootpage__list">
 					<li><a target="_blank" href="home.html">Главная страница</a></li>
 				</ol>
+				<div class="rootpage__info">
+					Попапы открываются по клику на элемент с аттрибутом <span>'data-popup'</span> имеющим название класса
+					существующего попапа.
+					<br><br>
+					Например: <br>
+					<xmp><button data-popup=".popup-form">Открыть попап</button></xmp>
+				</div>
+				<h2>Существующие попапы:</h2>
+				<ol class="rootpage__list">
+					<li>
+						<xmp>.popup-form</xmp>
+					</li>
+					<li>
+						<xmp>.popup-privacy</xmp>
+					</li>
+					<li>
+						<xmp>.popup-sejem</xmp>
+					</li>
+					<li>
+						<xmp>.popup-thanks</xmp>
+					</li>
+					<li>
+						<xmp>.popup-prenesite</xmp>
+					</li>
+				</ol>
 				<div class="rootpage__tnx">
 					<h2>Спасибо за заказ!</h2>
 					<p>Буду рад хорошему отзыву.</p>
@@ -86,6 +111,11 @@
 		vertical-align: top;
 	}
 
+	xmp {
+		background-color: #444;
+		padding: 10px;
+	}
+
 	.wrapper {
 		width: 100%;
 		min-height: 100%;
@@ -142,6 +172,10 @@
 	.rootpage__info {
 		line-height: 140%;
 		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__info span {
+		font-weight: bold;
 	}
 
 	.rootpage__list {

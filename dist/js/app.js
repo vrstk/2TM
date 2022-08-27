@@ -5496,39 +5496,36 @@
             });
         }
         function initSliders() {
-            if (document.querySelector(".representatives__slider")) new core(".representatives__slider", {
+            if (document.querySelector(".target__slider")) new core(".target__slider", {
                 modules: [ Navigation, Pagination ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 4,
                 spaceBetween: 0,
-                autoHeight: true,
+                autoHeight: false,
                 speed: 800,
                 pagination: {
-                    el: ".representatives__pagination",
+                    el: ".target__pagination",
                     clickable: true
                 },
                 navigation: {
-                    prevEl: ".representatives__button-prev",
-                    nextEl: ".representatives__button-next"
+                    prevEl: ".target__button-prev",
+                    nextEl: ".target__button-next"
                 },
                 breakpoints: {
                     320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    480: {
                         slidesPerView: 2,
-                        spaceBetween: 0,
-                        autoHeight: true
+                        spaceBetween: 20
                     },
                     768: {
-                        slidesPerView: 2,
-                        spaceBetween: 0
+                        slidesPerView: 3,
+                        spaceBetween: 20
                     },
                     992: {
-                        slidesPerView: 4,
-                        spaceBetween: 0
-                    },
-                    1268: {
-                        slidesPerView: 4,
-                        spaceBetween: 0
+                        slidesPerView: 6
                     }
                 },
                 on: {}
@@ -5731,6 +5728,15 @@
         const btnUp = document.querySelector(".footer__button-up");
         document.addEventListener("windowScroll", (function() {
             if (scrollY >= 1040) btnUp.classList.add("_active"); else if (scrollY <= 1040) btnUp.classList.remove("_active");
+        }));
+        const reminders = document.querySelectorAll(".reminder");
+        document.addEventListener("DOMContentLoaded", (function() {
+            if (window.innerWidth <= 767) for (let i = 0; i < reminders.length; i++) reminders[0].setAttribute("style", "display: none;");
+            if (window.innerWidth >= 768) for (let i = 0; i < reminders.length; i++) reminders[0].setAttribute("style", "display: block;");
+        }));
+        window.addEventListener("resize", (function() {
+            if (window.innerWidth <= 767) for (let i = 0; i < reminders.length; i++) reminders[0].setAttribute("style", "display: none;");
+            if (window.innerWidth >= 768) for (let i = 0; i < reminders.length; i++) reminders[0].setAttribute("style", "display: block;");
         }));
         window["FLS"] = false;
         isWebp();
