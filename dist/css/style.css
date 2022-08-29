@@ -4553,6 +4553,14 @@ p {
     width: 100%;
   }
 
+  .popup-fair .popup__content .form__input {
+    width: 100%;
+  }
+
+  .popup-fair .popup__content .form__select {
+    width: 100%;
+  }
+
   .header {
     -webkit-box-shadow: 0rem 0.3125rem 0.625rem 0rem rgba(99, 101, 103, 0.2);
             box-shadow: 0rem 0.3125rem 0.625rem 0rem rgba(99, 101, 103, 0.2);
