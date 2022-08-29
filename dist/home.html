@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220828023242">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220829125035">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 			<div class="header__container">
 				<div class="header__content">
 					<a href="/" class="header__logo logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo" class="logo__image"></picture></a>
-					<button data-popup=".popup-form" class="header__button _icon-paper-plane">Kontaktirajte nas</button>
+					<button data-popup="#popup-form" class="header__button _icon-paper-plane">Kontaktirajte nas</button>
 					<a href="mailto:education@2tm.si" class="header__mail _icon-mail" data-da=".menu__body, 767, last">education@2tm.si</a>
 					<a href="viber://chat?number=%2B38669699054" class="header__viber _icon-viber" data-da=".menu__body, 767, last">+386 69 699 054</a>
 				</div>
@@ -51,7 +51,7 @@
 						<div class="fair__description" data-da=".fair__container, 767, 2">Imate odlično priložnost neposrednega
 							komuniciranja z izobraževalnimi
 							ustanovami iz Slovenije</div>
-						<button class="fair__link" data-popup=".popup-prenesite" data-da=".fair__timetable, 767, last">Prenesite
+						<button class="fair__link" data-popup="#popup-download" data-da=".fair__timetable, 767, last">Prenesite
 							brezplačno vstopnico</button>
 					</div>
 					<div class="fair__image fair-ibg"><picture><source srcset="img/huge.webp" type="image/webp"><img src="img/huge.jpg" alt="Image" class="fair__picture"></picture></div>
@@ -81,7 +81,7 @@
 					<div class="reminder__text">
 						<span>Želite prejeti opomnik za obisk sejma?</span><br>Pustite nam svoje podatke
 					</div>
-					<button class="reminder__button button" data-popup=".popup-sejem">Pošljite</button>
+					<button class="reminder__button button" data-popup="#popup-fair">Pošljite</button>
 				</div>
 			</section>
 			<section class="page__fair fair">
@@ -248,7 +248,7 @@
 					</div>
 
 
-					<button class="target__link" data-popup=".popup-prenesite">Prenesite brezplačno vstopnico</button>
+					<button class="target__link" data-popup="#popup-download">Prenesite brezplačno vstopnico</button>
 				</div>
 			</section>
 			<section id="schedule" class="page__schedule schedule">
@@ -382,7 +382,7 @@
 					<div class="reminder__text">
 						<span>Želite prejeti opomnik za obisk sejma?</span><br>Pustite nam svoje podatke
 					</div>
-					<button class="reminder__button button" data-popup=".popup-sejem">Pošljite</button>
+					<button class="reminder__button button" data-popup="#popup-fair">Pošljite</button>
 				</div>
 			</section>
 			<section id="organizer" class="page__organizer organizer">
@@ -426,7 +426,7 @@
 						<!-- <p class="contacts__subtitle">Courtyard Banja Luka</p> -->
 						<p class="contacts__date _icon-calendar">30.09. - 01.10.22</p>
 						<p class="contacts__adress _icon-pin">Prvog Krajiskog Korpusa 33, Banja Luka, Bosnia Herzegovina, 78000</p>
-						<button class="contacts__link" data-popup=".popup-prenesite">Prenesite brezplačno vstopnico</button>
+						<button class="contacts__link" data-popup="#popup-download">Prenesite brezplačno vstopnico</button>
 						<!-- <a href="mailto:education@2tm.si" class="contacts__email _icon-mail">education@2tm.si</a>
 						<a href="viber://chat?number=%2B38669699054" class="contacts__viber _icon-viber">+386 69 699 054</a>
 						<a href="https://2tm.eu" class="contacts__web _icon-world">www.2tm.eu</a>
@@ -478,7 +478,7 @@
 									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
 											let</span></label>
 								</div>
-								<button data-popup=".popup-privacy" class="form__privacy">Politika zaščite osebnih podatkov.</button>
+								<button data-popup="#popup-privacy" class="form__privacy">Politika zaščite osebnih podatkov.</button>
 								<button type="submit" class="button">Pošljite</button>
 							</form>
 						</div>
@@ -497,7 +497,7 @@
 			<button data-goto="#header" data-goto-speed="1000" class="footer__button-up up-ibg-contain"><picture><source srcset="img/bot_up_min.webp" type="image/webp"><img src="img/bot_up_min.png" alt=""></picture></button>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup popup-form">
+	<div id="popup-form" aria-hidden="true" class="popup popup-form">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 
@@ -545,7 +545,7 @@
 		</div>
 	</div>
 
-	<div id="popup" aria-hidden="true" class="popup popup-privacy">
+	<div id="popup-privacy" aria-hidden="true" class="popup popup-privacy">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"><span></span></button>
@@ -631,12 +631,12 @@
 		</div>
 	</div>
 
-	<div id="popup" aria-hidden="true" class="popup popup-sejem">
+	<div id="popup-fair" aria-hidden="true" class="popup popup-fair">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"><span></span></button>
 				<div class="popup__text">
-					<h2 class="popup-sejem__title title">Izpolnite spodnji obrazec in opozorili vas bomo na sejme</h2>
+					<h2 class="popup-fair__title title">Izpolnite spodnji obrazec in opozorili vas bomo na sejme</h2>
 					<form action="#" method="post" data-ajax class="form">
 						<div class="form__row">
 							<div class="form__input">
@@ -648,26 +648,27 @@
 							<div class="form__input">
 								<input autocomplete="off" type="tel" name="form[]" value="" placeholder="" class="input tel">
 							</div>
+							<div class="form__select">
+								<select name="form[]" class="select" data-error="Izberite sejem" data-required data-validate>
+									<option value="" selected>Izberite sejem</option>
+									<option value="1">Banja Luka, BiH 30.09. - 01.10.22 </option>
+									<option value="2">Sarajevo, BiH 14.10. - 15.10.22 </option>
+									<option value="3">Skopje, Makedonija 18.11. - 19.11.22 </option>
+								</select>
+							</div>
 						</div>
-						<div class="form__select">
-							<select name="form[]" class="select" data-error="Izberite sejem" data-required data-validate>
-								<option value="" selected>Izberite sejem</option>
-								<option value="1">Banja Luka, BiH 30.09. - 01.10.22 </option>
-								<option value="2">Sarajevo, BiH 14.10. - 15.10.22 </option>
-								<option value="3">Skopje, Makedonija 18.11. - 19.11.22 </option>
-							</select>
-						</div>
+
 						<div class="form__row">
 							<div class="form__check">
 								<div class="checkbox">
-									<input id="popup-sejem__c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
-									<label for="popup-sejem__c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z
+									<input id="popup-fair__c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
+									<label for="popup-fair__c_1" class="checkbox__label"><span class="checkbox__text">Strinjam se z
 											obdelavo mojih
 											osebnih podatkov</span></label>
 								</div>
 								<div class="checkbox">
-									<input id="popup-sejem__c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
-									<label for="popup-sejem__c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
+									<input id="popup-fair__c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required data-validate>
+									<label for="popup-fair__c_2" class="checkbox__label"><span class="checkbox__text">Imam več kot 16
 											let</span></label>
 								</div>
 								<button data-popup=".popup-privacy" class="form__privacy">Politika zaščite osebnih podatkov.</button>
@@ -682,7 +683,7 @@
 		</div>
 	</div>
 
-	<div id="popup" aria-hidden="true" class="popup popup-thanks">
+	<div id="popup-thanks" aria-hidden="true" class="popup popup-thanks">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"><span></span></button>
@@ -699,27 +700,27 @@
 		</div>
 	</div>
 
-	<div id="popup" aria-hidden="true" class="popup popup-prenesite">
+	<div id="popup-download" aria-hidden="true" class="popup popup-download">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"><span></span></button>
 				<div class="popup__text">
-					<h2 class="popup-prenesite__title">Prenesite brezplačno vstopnico</h2>
-					<div class="popup-prenesite__item prenesite-item">
+					<h2 class="popup-download__title">Prenesite brezplačno vstopnico</h2>
+					<div class="popup-download__item prenesite-item">
 						<div class="prenesite-item__text">
 							<div class="prenesite-item__title">Banja Luka, BiH</div>
 							<div class="prenesite-item__date">30.09. - 01.10.22</div>
 						</div>
 						<a href="" class="prenesite-item__link">Prenesite</a>
 					</div>
-					<div class="popup-prenesite__item prenesite-item">
+					<div class="popup-download__item prenesite-item">
 						<div class="prenesite-item__text">
 							<div class="prenesite-item__title">Sarajevo, BiH</div>
 							<div class="prenesite-item__date">14.10. - 15.10.22</div>
 						</div>
 						<a href="" class="prenesite-item__link">Prenesite</a>
 					</div>
-					<div class="popup-prenesite__item prenesite-item">
+					<div class="popup-download__item prenesite-item">
 						<div class="prenesite-item__text">
 							<div class="prenesite-item__title">Skopje, Makedonija</div>
 							<div class="prenesite-item__date">18.11. - 19.11.22</div>
@@ -730,7 +731,15 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220828023242"></script>
+
+	<!-- noindex -->
+	<button data-popup="#popup-form" style="display: none;"></button>
+	<button data-popup="#popup-privacy" style="display: none;"></button>
+	<button data-popup="#popup-fair" style="display: none;"></button>
+	<button data-popup="#popup-thanks" style="display: none;"></button>
+	<button data-popup="#popup-download" style="display: none;"></button>
+	<!-- /noindex -->
+	<script src="js/app.min.js?_v=20220829125035"></script>
 </body>
 
 </html>

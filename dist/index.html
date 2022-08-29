@@ -19,31 +19,24 @@
 				<ol class="rootpage__list">
 					<li><a target="_blank" href="home.html">Главная страница</a></li>
 				</ol>
-				<div class="rootpage__info">
-					Попапы открываются по клику на элемент с аттрибутом <span>'data-popup'</span> имеющим название класса
-					существующего попапа.
-					<br><br>
-					Например: <br>
-					<xmp><button data-popup=".popup-form">Открыть попап</button></xmp>
-				</div>
-				<h2>Существующие попапы:</h2>
+				<h2>Готовые попапы:</h2>
 				<ol class="rootpage__list">
-					<li>
-						<xmp>.popup-form</xmp>
-					</li>
-					<li>
-						<xmp>.popup-privacy</xmp>
-					</li>
-					<li>
-						<xmp>.popup-sejem</xmp>
-					</li>
-					<li>
-						<xmp>.popup-thanks</xmp>
-					</li>
-					<li>
-						<xmp>.popup-prenesite</xmp>
-					</li>
+					<li><a target="_blank" href="home.html#popup-form">Форма №1</a></li>
+					<li><a target="_blank" href="home.html#popup-fair">Форма №2</a></li>
+					<li><a target="_blank" href="home.html#popup-thanks">Спасибо</a></li>
+					<li><a target="_blank" href="home.html#popup-download">Загрузка</a></li>
+					<li><a target="_blank" href="home.html#popup-privacy">Политика конфиденциальности</a></li>
 				</ol>
+				<div class="rootpage__info">
+					Попапы открываются по клику на элемент с аттрибутом <span>'data-popup'</span> имеющим ID существующего попапа.
+					<br>
+					Например: <br>
+					<xmp><button data-popup="#popup-thanks">Открыть попап</button></xmp> <br>
+					Или по прямой ссылке с хешем.
+					<br>
+					Например: <br>
+					<xmp><a href="#popup-form">Открыть попап</a></xmp>
+				</div>
 				<div class="rootpage__tnx">
 					<h2>Спасибо за заказ!</h2>
 					<p>Буду рад хорошему отзыву.</p>
