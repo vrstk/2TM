@@ -5525,7 +5525,7 @@
                         spaceBetween: 20
                     },
                     992: {
-                        slidesPerView: 6
+                        slidesPerView: 8
                     }
                 },
                 on: {}
